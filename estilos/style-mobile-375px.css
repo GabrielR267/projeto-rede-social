@@ -29,30 +29,38 @@
     background: url(../imagens/frame-iphone.png) center center no-repeat;
     background-size: 230px 430px;
   }
+  .tela {
+    width: 198px;
+    height: 321px;
+  }
+  .frame {
+    width: 198px;
+    height: 323px;
+  }
 }
 
 @media (min-width: 321px) {
   .logo {
     margin: 2px;
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
   }
 
   .logo > a > img {
     margin: 2px;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     box-shadow: 3px 2px 3px black;
   }
   .logo > a > img:hover {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     box-shadow: 5px 4px 3px black;
   }
   .logo > a > img:active {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     box-shadow: 3px 2px 3px black;
   }
 
@@ -61,6 +69,15 @@
     background-size: 250px 430px;
     height: 550px;
     width: 250px;
+  }
+
+  .tela {
+    width: 215px;
+    height: 320px;
+  }
+  .frame {
+    width: 216px;
+    height: 323px;
   }
 }
 
@@ -99,6 +116,16 @@ main {
   justify-content: center;
 }
 
-.frame::-webkit-scrollbar {
-  width: 8px;
+.btn {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.iphone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

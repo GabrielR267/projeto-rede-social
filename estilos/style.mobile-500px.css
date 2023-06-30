@@ -13,17 +13,20 @@
     border-radius: 50%;
     box-shadow: 3px 2px 3px black;
   }
+
   .logo > a > img:hover {
     width: 60px;
     height: 60px;
     box-shadow: 5px 4px 3px black;
   }
+
   .logo > a > img:active {
     width: 55px;
     height: 55px;
     box-shadow: 3px 2px 3px black;
   }
 }
+
 @media (min-width: 401px) {
   .logo {
     width: 65px;
@@ -37,11 +40,13 @@
     border-radius: 50%;
     box-shadow: 3px 2px 3px black;
   }
+
   .logo > a > img:hover {
     width: 60px;
     height: 60px;
     box-shadow: 5px 4px 3px black;
   }
+
   .logo > a > img:active {
     width: 55px;
     height: 55px;
@@ -59,6 +64,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 body {
   background: rgb(255, 192, 97) url(../imagens/fundo-madeira.jpg) center center
     no-repeat fixed;
@@ -75,21 +81,17 @@ main {
 .iphone {
   display: flex;
   flex-direction: column;
-  width: 270px;
-  height: 550px;
-  background: url(../imagens/frame-iphone.png) center center no-repeat;
-  background-size: 270px 500px;
   align-items: center;
   justify-content: center;
 }
 
 .tela {
-  width: 228px;
-  height: 367px;
+  width: 214px;
+  height: 321px;
 }
 .frame {
-  width: 227px;
-  height: 372px;
+  width: 214px;
+  height: 323px;
 }
 
 .logo-box {
@@ -99,6 +101,10 @@ main {
   justify-content: center;
 }
 
-.frame::-webkit-scrollbar {
-  width: 8px;
+.btn {
+  width: 22vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
 }
