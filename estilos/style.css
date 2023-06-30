@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  background: rgb(255, 192, 97) url(../imagens/fundo-madeira.jpg) center center
+    no-repeat fixed;
+  background-size: cover;
+}
+
+main {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.iphone {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 580px;
+  background: url(../imagens/frame-iphone.png) center center no-repeat;
+  background-size: 300px 575px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tela {
+  width: 264px;
+  height: 438px;
+}
+.frame {
+  width: 264px;
+  height: 438px;
+}
+.iphone,
+.tela,
+.frame {
+  position: absolute;
+}
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+}
+
+.logo > a {
+  padding: 5px;
+}
+
+.logo {
+  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+.logo > a > img {
+  margin: 2px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 3px 2px 3px black;
+}
+.logo > a > img:hover {
+  width: 75px;
+  height: 75px;
+  box-shadow: 5px 4px 3px black;
+}
+.logo > a > img:active {
+  width: 65px;
+  height: 65px;
+  box-shadow: 3px 2px 3px black;
+}
+.logo > a:hover {
+  padding: 0;
+}
+
+.logo > a:active {
+  padding: 5px;
+}
+
+.btn {
+  width: 94vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
