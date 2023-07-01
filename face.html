@@ -9,13 +9,8 @@
         margin: 0;
         padding: 0;
       }
-      html,
-      body {
-        width: 80vw;
-        height: 100vh;
-      }
 
-      main {
+      body {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,16 +18,19 @@
         width: 99vw;
         border: 1px solid black;
       }
-      main > img {
+      
+      body > img {
         width: 100%;
       }
+
       ::-webkit-scrollbar {
         width: 0px;
         height: 0px;
       }
-      main>a{
+
+      body > a {
         background-color: red;
-        width: 98vw;
+        width: 99vw;
         height: 30px;
         text-align: center;
         text-decoration: none;
@@ -42,9 +40,7 @@
     </style>
   </head>
   <body>
-    <main>
-      <img src="imagens/tela-facebook.jpg" alt="" />
-      <a href="https://pt-br.facebook.com/" target="_blank">Acesse</a>
-    </main>
+    <img src="imagens/tela-facebook.jpg" alt="" />
+    <a href="https://pt-br.facebook.com/" target="_blank">Acesse</a>
   </body>
 </html>

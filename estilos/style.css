@@ -10,6 +10,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 body {
   background: rgb(255, 192, 97) url(../imagens/fundo-madeira.jpg) center center
     no-repeat fixed;
@@ -30,73 +31,272 @@ main {
 .iphone {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 580px;
-  background: url(../imagens/frame-iphone.png) center center no-repeat;
-  background-size: 300px 575px;
   align-items: center;
   justify-content: center;
 }
 
-.tela {
-  width: 264px;
-  height: 438px;
-}
-.frame {
-  width: 264px;
-  height: 438px;
-}
-.iphone,
-.tela,
-.frame {
-  position: absolute;
-}
 .logo-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin: 15px;
 }
 
 .logo > a {
-  padding: 5px;
-}
-
-.logo {
-  margin-bottom: 10px;
-  width: 70px;
-  height: 70px;
-}
-
-.logo > a > img {
-  margin: 2px;
-  width: 70px;
-  height: 70px;
+  display: block;
   border-radius: 50%;
-  box-shadow: 3px 2px 3px black;
-}
-.logo > a > img:hover {
-  width: 75px;
-  height: 75px;
-  box-shadow: 5px 4px 3px black;
-}
-.logo > a > img:active {
-  width: 65px;
-  height: 65px;
-  box-shadow: 3px 2px 3px black;
-}
-.logo > a:hover {
-  padding: 0;
-}
-
-.logo > a:active {
-  padding: 5px;
+  width: 70px;
+  height: 70px;
+  margin: 2px;
 }
 
 .btn {
-  width: 94vw;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: center;
+}
+
+@media (max-width: 320px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo > a > img {
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 3px 2px 3px black;
+  }
+
+  .logo > a > img:hover {
+    width: 53px;
+    height: 53px;
+    box-shadow: 5px 4px 3px black;
+  }
+
+  .logo > a > img:active {
+    width: 50px;
+    height: 50px;
+    box-shadow: 3px 2px 3px black;
+  }
+
+  .iphone {
+    width: 230px;
+    height: 550px;
+    background: url(../imagens/frame-iphone.png) center center no-repeat;
+    background-size: 230px 430px;
+  }
+
+  .tela {
+    height: 321px;
+  }
+
+  .frame {
+    width: 198px;
+    height: 323px;
+  }
+  .frame,
+  .tela {
+    width: 198px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .logo {
+    margin: 2px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo > a > img {
+    margin: 2px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 3px 2px 3px black;
+  }
+
+  .logo > a > img:hover {
+    width: 60px;
+    height: 60px;
+    box-shadow: 5px 4px 3px black;
+  }
+
+  .logo > a > img:active {
+    width: 55px;
+    height: 55px;
+    box-shadow: 3px 2px 3px black;
+  }
+
+  .iphone {
+    background: url(../imagens/frame-iphone.png) center center no-repeat;
+    background-size: 246px 430px;
+    height: 429px;
+    width: 237px;
+  }
+
+  .tela {
+    width: 214px;
+    height: 321px;
+  }
+
+  .frame {
+    width: 213px;
+    height: 323px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 400px) {
+  .iphone {
+    position: relative;
+    background: url(../imagens/frame-iphone.png) center center no-repeat;
+    background-size: 247px 428px;
+    width: 245px;
+    height: 427px;
+  }
+
+  .logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .logo > a > img {
+    margin: 2px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+
+  .logo > a > img:hover {
+    width: 60px;
+    height: 60px;
+    box-shadow: 5px 4px 3px black;
+  }
+
+  .logo > a > img:active {
+    width: 55px;
+    height: 55px;
+  }
+
+  .tela {
+    width: 214px;
+    height: 321px;
+  }
+
+  .frame {
+    width: 214px;
+    height: 323px;
+  }
+
+  .btn {
+    width: 22vw;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .iphone {
+    position: relative;
+    background: url(../imagens/frame-iphone.png) center center no-repeat;
+    background-size: 247px 428px;
+    width: 245px;
+    height: 427px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logo > a > img {
+    margin: 2px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+
+  .logo > a > img:hover {
+    width: 69px;
+    height: 69px;
+    box-shadow: 5px 4px 3px black;
+  }
+
+  .logo > a > img:active {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tela {
+    width: 214px;
+    height: 321px;
+  }
+
+  .frame {
+    width: 214px;
+    height: 323px;
+  }
+
+  .btn {
+    width: 22vw;
+  }
+}
+
+@media (min-width: 501px) {
+  .iphone {
+    position: absolute;
+    background: url(../imagens/frame-iphone.png) center center no-repeat;
+    background-size: 300px 550px;
+    width: 300px;
+    height: 550px;
+  }
+
+  .tela {
+    width: 264px;
+    height: 438px;
+  }
+
+  .frame {
+    width: 264px;
+    height: 438px;
+  }
+
+  .logo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .logo > a > img {
+    margin: 2px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 3px 2px 3px black;
+  }
+
+  .logo > a > img:hover {
+    width: 75px;
+    height: 75px;
+    box-shadow: 5px 4px 3px black;
+  }
+
+  .logo > a > img:active {
+    width: 65px;
+    height: 65px;
+    box-shadow: 3px 2px 3px black;
+    transition: 0.1s;
+  }
+
+  .btn {
+    width: 94vw;
+  }
 }
