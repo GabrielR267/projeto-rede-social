@@ -294,15 +294,13 @@ main {
   }
 
   .logo > a > img:hover {
-    width: 75px;
-    height: 75px;
+    transform: translate(-5%,-5%);
     box-shadow: 5px 4px 3px black;
     transition: 0.2s;
   }
 
-  .logo > a > img:active {
-    width: 65px;
-    height: 65px;
+  .logo > a > img:active { 
+    transform: translate(-5% 5%);
     box-shadow: 3px 2px 3px black;
     transition: 0.2s;
   }
