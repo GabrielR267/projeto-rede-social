@@ -18,14 +18,11 @@ body {
 }
 
 main {
-  position: relative;
   display: flex;
   height: 100vh;
   width: 100vw;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  align-content: center;
 }
 
 .iphone {
@@ -47,20 +44,27 @@ main {
   border-radius: 50%;
   width: 70px;
   height: 70px;
-  margin: 2px;
+  margin: 5px;
+}
+
+.logo > a > img:hover {
+  transition: 0.2s;
+}
+
+.logo > a > img:active {
+  transition: 0.2s;
 }
 
 .btn {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 @media (max-width: 320px) {
-  .logo {
-    width: 60px;
-    height: 60px;
+  .logo > a {
+    width: 55px;
+    height: 55px;
+    margin: 2px;
   }
 
   .logo > a > img {
@@ -102,10 +106,13 @@ main {
   .tela {
     width: 198px;
   }
+  .btn {
+    margin-left: 2vw;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
-  .logo {
+  .logo > a {
     margin: 2px;
     width: 60px;
     height: 60px;
@@ -147,6 +154,9 @@ main {
     width: 213px;
     height: 323px;
   }
+  .btn {
+    margin-left: 2vw;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 400px) {
@@ -158,9 +168,9 @@ main {
     height: 427px;
   }
 
-  .logo {
-    width: 65px;
-    height: 65px;
+  .logo > a {
+    width: 55px;
+    height: 55px;
   }
 
   .logo > a > img {
@@ -205,21 +215,21 @@ main {
     height: 427px;
   }
 
-  .logo {
-    width: 70px;
-    height: 70px;
+  .logo > a {
+    width: 60px;
+    height: 60px;
+    margin: 4px;
   }
 
   .logo > a > img {
-    margin: 2px;
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
   }
 
   .logo > a > img:hover {
-    width: 69px;
-    height: 69px;
+    width: 65px;
+    height: 65px;
     box-shadow: 5px 4px 3px black;
   }
 
@@ -258,7 +268,7 @@ main {
   }
 
   .frame {
-    width: 260px;
+    width: 258px;
     height: 413px;
   }
 
@@ -272,7 +282,7 @@ main {
   .logo {
     margin-bottom: 10px;
     width: 70px;
-    height: 70px;
+    max-height: 500px;
   }
 
   .logo > a > img {
@@ -287,13 +297,14 @@ main {
     width: 75px;
     height: 75px;
     box-shadow: 5px 4px 3px black;
+    transition: 0.2s;
   }
 
   .logo > a > img:active {
     width: 65px;
     height: 65px;
     box-shadow: 3px 2px 3px black;
-    transition: 0.1s;
+    transition: 0.2s;
   }
 
   .btn {
